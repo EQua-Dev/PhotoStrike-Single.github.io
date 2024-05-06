@@ -1,0 +1,596 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <title>PhotoStrike</title>
+    <style>
+        header {
+            background-size: cover;
+            background-position: center;
+            min-height: 900px;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 450px;
+            }
+        }
+
+        footer {
+            background-size: cover;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        #connect {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav Menu -->
+    <div>
+
+        <nav class="nav-wrapper blue ">
+            <div class=" container ">
+                <div class="container ">
+                    <a href="index.html" class="brand-logo ">photoStrike
+                        <i class="material-icons left-align" id="brand-image">camera</i>
+                    </a>
+                    <a href="#" class="sidenav-trigger" data-target="mobileMenu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+                <ul class="right hide-on-med-and-down black-text" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#reviews">Review</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#service-book-form" class="modal-trigger brown-text" style="font-weight: bolder;">Book
+                            Service</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small transparent darken-4"
+                            data-tooltip="This is Instagram">
+                            <i class="fab fa-instagram"></i>
+                    <li><a href="#" class="tooltipped btn-floating btn-small transparent darken-4"
+                            data-tooltip="This is Facebook">
+                            <i class="fab fa-facebook"></i>
+                    <li><a href="#" class="tooltipped btn-floating btn-small transparent darken-4"
+                            data-tooltip="This is Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <ul class="sidenav" id="mobileMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">Review</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#service-book-form" class="modal-trigger">Book Service</a></li>
+        </ul>
+
+        <!-- Div for Carousel Quotes on Photography -->
+        <div class="carousel carousel-slider center" id="quotes">
+
+            <div class="carousel-item blue white-text center" href="#one!">
+                <h2 class="black-text"> “Photography is the story I fail to put into words.” <br>
+                    — Destin Sparks</h2>
+            </div>
+            <div class="carousel-item blue white-text center" href="#two!">
+                <h2 class="black-text" style="font-weight: bolder;"> “When words become unclear, I shall focus with
+                    photographs. When images become inadequate, I shall be content with silence.” <br>
+                    — Ansel Adams</h2>
+            </div>
+            <div class="carousel-item blue white-text center" href="#three!">
+                <h2 class="black-text"> “In photography there is a reality so subtle that it becomes more real than
+                    reality.”<br>
+                    — Alfred Stieglitz
+                </h2>
+            </div>
+            <div class="carousel-item blue white-text center" href="#four!">
+                <h2 class="black-text"> “There is one thing the photograph must contain, the humanity of the
+                    moment.”<br>
+                    — Robert Frank</h2>
+            </div>
+            <div class="carousel-item blue accent-3 white-text center" href="#two!">
+                <h2 class="black-text"> “Taking an image, freezing a moment, reveals how rich reality truly is.”<br>
+                    — Anonymous</h2>
+            </div>
+            <div class="carousel-item blue accent-3 white-text center" href="#two!">
+                <h2 class="black-text"> “Photography is a way of feeling, of touching, of loving. What you have caught
+                    on film is captured forever… It remembers little things, long after you have forgotten
+                    everything.”<br>
+                    — Aaron Siskind</h2>
+            </div>
+            <div class="carousel-item blue accent-3 white-text center" href="#two!">
+                <h2 class="black-text"> “We are making photographs to understand what our lives mean to us.”<br>
+                    — Ralph Hattersley</h2>
+            </div>
+            <div class="carousel-item blue accent-3 white-text center" href="#two!">
+                <h2 class="black-text"> “A thing that you see in my pictures is that I was not afraid to fall in love
+                    with these people.”<br>
+                    — Annie Leibovitz</h2>
+            </div>
+            <div class="carousel-item blue accent-3 white-text center" href="#two!">
+                <h2 class="black-text"> “When words become unclear, I shall focus with photographs. When images become
+                    inadequate, I shall be content with silence.” <br>
+                    — Ansel Adams</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section for Displaying the Several Previous Works (Carousels) -->
+    <section class="section">
+        <h4 class="indigo-text text-darken-4 center ">Feast Your Eyes...</h4>
+
+        <!-- For Weddings Section -->
+        <section class="section container">
+            <div class="row">
+                <div class="col s12 l5">
+                    <div class="carousel single" id="carousel">
+                        <a class="carousel-item" href="#one!"><img src="imgs/weddingimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#two!"><img src="imgs/weddingimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#three!"><img src="imgs/weddingimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#four!"><img src="imgs/weddingimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#five!"><img src="imgs/weddingimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                    </div>
+                </div>
+                <div class="col s12 l5 offset-l1">
+                    <h4 style="font-weight:bold">Weddings & Events</h4>
+                    <p>Weddings and events are like chapters in a love story, each moment a brushstroke of emotion and celebration. Through my lens and editing touch, I weave these tales into timeless treasures, capturing the essence of love, joy, and togetherness.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- For City Section -->
+        <section class="container section">
+            <div class="row">
+                <div class="col s12 l5 push-l7">
+                    <div class="carousel single" id="carousel">
+                        <a class="carousel-item " href="#one!"><img src="imgs/cityimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#two!"><img src="imgs/cityimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#three!"><img src="imgs/cityimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#four!"><img src="imgs/cityimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#five!"><img src="imgs/cityimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                    </div>
+                </div>
+                <div class="col s12 l5 offset-l2 pull-l6 right-align">
+                    <h4 style="font-weight:bold">Sites & Landscape</h4>
+                    <p>Nature's canvas unfolds before us, a tapestry of breathtaking vistas and tranquil scenes. With each click of the shutter and gentle edit, I aim to encapsulate the raw beauty and serenity of landscapes. From towering mountains to serene coastlines, I transform these natural wonders into visual poetry, inviting viewers to embark on a journey of awe and appreciation for the world around us.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Nature Section -->
+        <section class="container section">
+            <div class="row">
+                <div class="col s12 l5">
+                    <div class="carousel single" id="carousel">
+                        <a class="carousel-item" href="#one!"><img src="imgs/natureimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#two!"><img src="imgs/natureimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#three!"><img src="imgs/natureimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#four!"><img src="imgs/natureimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                        <a class="carousel-item" href="#five!"><img src="imgs/natureimg.jpeg"
+                                class="responsive-img materialboxed"></a>
+                    </div>
+                </div>
+                <div class="col s12 l5 offset-l1">
+                    <h4 style="font-weight:bold">Wild & Nature</h4>
+                    <p>In the untamed beauty of the wilderness, every moment is a masterpiece waiting to be captured. Through my lens and editing finesse, I seek to preserve the raw majesty and delicate balance of nature. From the fierce grace of wild animals to the serene tranquility of untouched landscapes, each image tells a story of the Earth's incredible diversity and enduring resilience.</p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Section for Reviews (Viewing and Making) -->
+    <section class="section container scrolling" id="reviews">
+
+        <div class="row">
+            <!-- Column for Viewing Made Reviews -->
+            <div class="col s12 l5">
+                <h4>Reviews & Ratings</h4>
+
+                <!-- Tab Headings for Reviews Made By Clients and Websters -->
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#clients" class="indigo-text text-darken-4">Clients</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#websters" class="indigo-text text-darken-4">Websters</a>
+                    </li>
+                </ul>
+
+                <!-- Tab for Reviews By Clients -->
+                <div class="col s12" id="clients">
+
+                    <!-- Client 1 -->
+                    <div id="client1-review">
+                        <span>
+                            <span >
+                                <i class="material-icons prefix">camera</i>
+                                <span>Photo shot</span>
+
+                            </span>
+                            <span>
+                                <i class="material-icons prefix">landscape</i>
+                                <span>Abuja</span>
+                            </span>
+                            <span>
+                                <i class="material-icons prefix ">date_range</i>
+                                <span >May, 2019</span>
+                            </span>
+                        </span>
+                        <br>
+                        <span>
+                            <i class="material-icons prefix">person</i>
+                            <span>Luomy</span>
+                        </span>
+                        <div id="client1-comment">
+                            <textarea name="client-comment" id="" cols="30"
+                                rows="10">Wow shots. Made me feel like a pro model</textarea>
+                        </div>
+
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- CLient 2 -->
+                    <div id="client1-review">
+                        <span>
+                            <span>
+                                <i class="material-icons prefix ">camera</i>
+                                <span >Event Cover</span>
+                            </span>
+                            <span>
+                                <i class="material-icons prefix ">map</i>
+                                <span>Imo</span>
+                            </span>
+                            <span>
+                                <i class="material-icons prefix ">date_range</i>
+                                <span >February, 2020</span>
+                            </span>
+                        </span>
+                        <br>
+                        <span>
+                            <i class="material-icons prefix ">person</i>
+                            <span >Richy</span>
+                        </span>
+
+                        <div id="client1-comment">
+                            <textarea name="client-comment"  id="" cols="30"
+                                rows="10">The Service was top notch. Captured all moments possible</textarea>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab For Reviews By Websters -->
+                <div class="col s12" id="websters">
+
+                    <!-- Webster 1 -->
+                    <div id="webster1-review">
+                        <span>
+                            <span>
+                                <i class="material-icons prefix ">camera</i>
+                                <span>Model Shots</span>
+                            </span>
+                        </span>
+                        <br>
+
+                        <span>
+                            <i class="material-icons prefix ">person</i>
+                            <span>Mario</span>
+                        </span>
+
+                        <div id="webster1-comment">
+                            <textarea name="webster-comment" id="" cols="30"
+                                rows="10">Really difficult to detect if the models were pretty or the photography is just something else</textarea>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Webster 2 -->
+                    <div id="client1-review">
+                        <span>
+                            <span>
+                                <i class="material-icons prefix">camera</i>
+                                <span>Conceptual</span>
+                            </span>
+                        </span>
+                        <br>
+                        <span>
+                            <i class="material-icons prefix">person</i>
+                            <span>Richy</span>
+                        </span>
+
+                        <div id="client1-comment">
+                            <textarea name="client-comment" id="" cols="30"
+                                rows="10">Classic conceptual shots</textarea>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Column To Leave A Review -->
+            <div class="col s12 l5 offset-l2">
+                <h4 class="text-blue">Leave a review</h4>
+
+                <!-- Two Buttons For Webster and Client -->
+                <p>
+                    <a href="#client-form" class="btn-floating modal-trigger waves-effect blue center-align">C</a>
+                    <span>As a client</span>
+                </p>
+                <p>
+                    <a href="#webster-form" class="btn-floating modal-trigger waves-effect blue center-align">W</a>
+                    <span>As a webster</span>
+                </p>
+
+                <!-- Modal Form for Client Review -->
+                <div class="modal" id="client-form">
+                    <div class="modal-content">
+                        <form action="#" class="container">
+                            <h4>Client</h4>
+                            <div class="input-field">
+                                <i class="material-icons prefix">person</i>
+                                <input type="text" id="client-username" class="validate">
+                                <label for="client-username">Your Name</label>
+                            </div>
+                            <div class="input-field">
+                                <p>Services You Received</p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" >
+                                        <span>PhotoShot</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Event Cover</span>
+                                    </label>
+                                </p>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="material-icons prefix">date_range</i>
+                                <input type="text" id="date" class="datepicker validate">
+                                <label for="date">When did you receive my service</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">map</i>
+                                <input type="text" id="location" class="validate">
+                                <label for="location">Location</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">message</i>
+                                <textarea id="client-review-message" class="materialize-textarea validate"></textarea>
+                                <label for="client-review-message">Your Comment</label>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="modal-close btn blue">Submit Review</a>
+                    </div>
+                </div>
+
+                <!-- Modal Form for Webster Review -->
+                <div class="modal" id="webster-form">
+                    <div class="modal-content">
+                        <form action="#" class="container">
+                            <h4>Webster</h4>
+                            <div class="input-field">
+                                <i class="material-icons prefix">person</i>
+                                <input type="text" id="webster-username" class="validate">
+                                <label for="webster-username">Your Name</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">message</i>
+                                <textarea id="message" class="materialize-textarea validate"></textarea>
+                                <label for="message">Your Comment</label>
+                            </div>
+
+                            <div class="input-field radioRequired validate" name="YesNo" data-error="Please Select">
+                                <p>Sure You Reviewed My Work?</p>
+ 
+                                <p>
+                                    <label>
+                                        <input class="with-gap" name="YesNo" type="radio" id="radioYes"/>
+                                        <span for="radioYes">Yes</span>
+                                    </label>
+                                </p> 
+
+                                <p>
+                                    <label>
+                                        <input class="with-gap" name="YesNo" type="radio" id="radioNo"/>
+                                        <span for="radioNo">No</span>
+                                    </label>
+                                </p> 
+                               
+                            </div>
+                            <div class="input-field">
+                                <p>Works You Reviewed</p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Models Shot</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Events Shots</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Landscape Shots</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Conceptual Shots</span>
+                                    </label>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="modal-close btn blue validate">Submit Review</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Modal Form for Book Service -->
+    <div class="modal" id="service-book-form">
+        <div class="modal-content">
+            <form action="#" class="container">
+                <h4>Book A Service</h4>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="client-email-full" class="validate">
+                    <label for="client-email-full">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <p>Services You Require</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>PhotoShot</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Event Cover</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date-full" class="datepicker validate">
+                    <label for="date-full">When did you receive my service</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">map</i>
+                    <input type="text" id="location" class="validate">
+                    <label for="location">Location</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">alarm</i>
+                    <input type="text" id="duration" class="validate">
+                    <label for="duration">Duration of Service</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="client-review-message" class="materialize-textarea"></textarea>
+                    <label for="client-review-message">Additional Info</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close btn blue validate">Book Service</a>
+        </div>
+    </div>
+
+
+    <!-- Page Footer -->
+    <footer class="page-footer grey darken-4" id="footer">
+
+        <section class="blue-grey darken-4" style="padding: 1vw;">
+            <p class="container white-text center-align">&copy;2020 WebStrike</p>
+        </section>
+    </footer>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+
+    <!-- CDN JQuery Version -->
+    <script src="//code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+        </script>
+
+    <!-- if CDN load fails, load local JQuery -->
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.5.1.min.js"><\/script>');
+    </script>
+
+    <!-- Javascript from Materialize -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- Local Javascript -->
+    <script src="js/effect.js"></script>
+
+</body>
+
+</html>
